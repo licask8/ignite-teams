@@ -6,11 +6,10 @@ import theme from './src/theme'
 // carregamento das fonts
 import { useFonts, Roboto_400Regular, Roboto_700Bold} from '@expo-google-fonts/roboto'
 
-import { Groups } from "@screens/Groups"
-import {  NewGroup } from '@screens/NewGroup'
-import { Players } from '@screens/Players'
 import { Loading } from '@components/Loading';
 
+// carregamento das rotas
+import { Routes} from '@routes/index'
 
 
 export default function App() {
@@ -23,7 +22,7 @@ export default function App() {
      backgroundColor='transparent'
      translucent
     />
-     { fontsLoaded ? <Players /> : <Loading />}
+     { fontsLoaded ? <Routes /> : <Loading />}
    </ThemeProvider> 
   );
 }
