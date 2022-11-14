@@ -10,7 +10,8 @@ export function Filter({ title, isActive = false, ...rest}: Props) {
     return (
         <Container
          isActive={isActive}
-        {...rest}>
+         {...rest}
+        >
             <Title>
                 {title}
             </Title>
